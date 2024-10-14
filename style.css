@@ -1,0 +1,184 @@
+body {
+  margin: 0px;
+}
+
+.flex-vertical {
+  display: flex; /* Make the container a flexbox */
+  flex-direction: column;
+}
+
+.panel {
+  display: flex; /* Make the container a flexbox */
+  /* align-content: space-evenly; */
+  gap: 40px;
+  flex-direction: row;
+  background-color: rgb(35, 35, 35);
+  color: rgb(210, 210, 210);
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.AdLayout {
+  height: 600px;
+  background: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  align-items: center;
+  align-content: flex-start;
+  z-index: -5;
+  overflow: hidden;
+}
+
+.firstImgAd {
+  position: relative;
+  top: -50%;
+  left: 0%;
+  width: 1000px;
+
+  z-index: -1;
+}
+
+.secondImgAd {
+  position: relative;
+  top: -80%;
+  left: 0%;
+  width: 1600px;
+
+  z-index: -1;
+}
+
+.thirdImgAd {
+  position: relative;
+  top: 120%; /* Move the image down 50% */
+  left: 50%; /* Move the image right 50% */
+  transform: translate(-50%, -150%); /* Adjust the image to be truly centered */
+  width: 3000px; /* Adjust the size of the image */
+  height: auto;
+
+  z-index: -1;
+}
+
+/* .AdLayout img {
+  position: relative;
+  top: -80%;
+  left: 0%;
+  width: 1500px;
+
+  z-index: -1;
+} */
+
+.AdLayout h1,
+h2 {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.AdLayout h3 {
+  opacity: 60%;
+  position: relative;
+  top: 60%; /* Position from the top */
+
+  font-family: sans-serif;
+  align-content: center;
+}
+
+.AdLayout h1 {
+  font-size: 50;
+}
+
+.buttons {
+  font-family: sans-serif;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.buttonProperty {
+  width: 90px;
+  padding: 10px;
+  border-radius: 25px;
+  translate: 0 600%;
+}
+.learnMore {
+  width: 130px;
+
+  background-color: rgb(30, 107, 250);
+}
+
+.buy {
+  width: 50px;
+  color: rgb(30, 107, 250);
+  border: 2px solid rgb(30, 107, 250);
+}
+
+.panel img {
+  filter: brightness(0) invert(1); /* Makes the SVG white */
+  width: 15px;
+}
+
+.icon {
+  height: 1px;
+  width: 1px;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 10vh;
+  width: 101%;
+}
+
+.image-container {
+  position: relative;
+  width: 100vh;
+  margin: 5px;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.overlay-buttom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+
+  padding: 20px;
+}
+.buttonHamad {
+  background-color: rgb(30, 107, 250);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+h1 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: white;
+}
+p {
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  line-height: 0.5;
+}
